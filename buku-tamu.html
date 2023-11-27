@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Buku Tamu - University Of Santuyy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="daud_logo">
+          <a href="index.html">
+            <h4>University Of Santuyy</h4>
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html"><button>Home</button></a>
+          </li>
+          <li>
+            <a href="tentang.html"><button>Tentang</button></a>
+          </li>
+          <li>
+            <a href="akademik.html"><button>Akademik</button></a>
+          </li>
+          <li>
+            <a href="pmb.html"><button>PMB</button></a>
+          </li>
+          <li>
+            <a href="riset.html"><button>Riset</button></a>
+          </li>
+          <li>
+            <a href="pekerjaan.html"><button>Pekerjaan</button></a>
+          </li>
+          <li>
+            <a href="buku-tamu.html"><button>Buku Tamu</button></a>
+          </li>
+        </ul>
+        <div class="daud_menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="daud_buku-tamu">
+        <div class="daud_buku-tamu-content">
+          <div class="daud_buku-tamu-form">
+            <form action="proses_form.php" method="post">
+              <label for="nama">Nama:</label>
+              <input type="text" id="fullName" name="nama" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email_id" name="email" required />
+
+              <label for="pesan">Pesan:</label>
+              <textarea id="message" name="pesan" rows="4" required></textarea>
+
+              <button type="submit">Kirim Pesan</button>
+            </form>
+          </div>
+          <div class="daud_buku-tamu-side">
+            <h2>Hubungi Kami</h2>
+            <p>
+              Jangan ragu untuk menghubungi kami. Tim kami akan dengan senang
+              hati membantu Anda.
+            </p>
+            <img src="assets/img/buku-tamu.jpg" alt="Contact Image" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="daud_footer-content">
+        <div class="daud_footer-about">
+          <h3>University Of Santuyy</h3>
+          <p>
+            tempat di mana pengetahuan dan kreativitas bertemu untuk membentuk
+            generasi pemimpin masa depan. Sebagai institusi pendidikan yang
+            berkomitmen untuk keunggulan akademis dan pengembangan pribadi, kami
+            dengan bangga memimpin mahasiswa kami dalam perjalanan penemuan diri
+            dan pembelajaran seumur hidup.
+          </p>
+        </div>
+        <div class="daud_footer-navigation">
+          <h3>Navigasi</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="akademik.html">Akademik</a></li>
+            <li><a href="pmb.html">PMB</a></li>
+            <li><a href="riset.html">Riset</a></li>
+            <li><a href="pekerjaan.html">Pekerjaan</a></li>
+            <li><a href="buku-tamu.html">Buku Tamu</a></li>
+          </ul>
+        </div>
+        <div class="daud_footer-contact" id="daud_copyright">
+          <h3>Kontak Kami</h3>
+          <p>
+            Email: info@universityofsantuyy.com<br />
+            Phone: +123 456 7890
+          </p>
+        </div>
+      </div>
+
+      <div class="daud_footer-copyright"></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
