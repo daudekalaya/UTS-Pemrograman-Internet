@@ -118,8 +118,7 @@ nav ul li a button:hover {
 #daud_jumbotron {
   background-image: url(assets/img/jumbotron.png);
   font-size: 20px;
-  padding: 60px;
-  padding-top: 170px;
+  padding: 200px;
   height: 100vh;
   color: #fff;
   text-align: center;
@@ -398,6 +397,11 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
+
+  #daud_jumbotron {
+    padding-top: 200px;
+  }
+
   .daud_subjudul h2 {
     text-align: left;
   }
@@ -448,11 +452,6 @@ main {
     text-align: left;
   }
 
-  .daud_videotour-container p {
-    line-height: 1.6;
-    padding: 20px;
-  }
-
   .daud_article h3,
   .daud_article p {
     line-height: 1.6;
@@ -480,13 +479,42 @@ main {
   margin-top: 30px;
 }
 
-.daud_videotour-section video {
-  max-width: 100%;
-  width: 60%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.daud_videotour-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+.daud_videotour-section iframe {
+  max-width: 100%;
+  width: 80%;
+  height: 60vh;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.daud_videotour-section iframe:hover {
+  transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+  .daud_videotour-container {
+    padding: 40px 20px; 
+    margin-top: 80px;
+  }
+
+  .daud_videotour-section {
+    height: auto; 
+  }
+
+  .daud_videotour-section iframe {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
 
 .daud_article-container {
   padding: 40px 0;
@@ -718,7 +746,7 @@ footer {
 
   #daud_jumbotron {
     height: 600px;
-    padding: 0;
+    padding: 50px;
     margin-top: 30px;
   }
 
